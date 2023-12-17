@@ -1,9 +1,13 @@
 // Display the current day at the top of the calender when a user opens the planner.
 
 var $currentDayEl = $('#currentDay');
-console.log($currentDayEl);
+// console.log($currentDayEl);
 
 var currentDayDate = dayjs().format('[Today is: ] dddd, MMMM D, YYYY h:mm A');
-console.log(currentDayDate);
+// console.log(currentDayDate);
 
 $currentDayEl.text(currentDayDate);
+
+
+// Present timeblocks for standard business hours when the user scrolls down.
+
